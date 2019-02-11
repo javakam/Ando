@@ -1,5 +1,5 @@
 #### 基础知识
-- [Java 基础总结](src/README.md)
+- [Java 基础总结](src/basic/README.md)
 - [Enum 枚举](src/enum_s)
 - [Generics 泛型](src/generics)
 <p>了解泛型</p>
