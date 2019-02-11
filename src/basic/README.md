@@ -1,14 +1,14 @@
 ### Java 功底
 
 #### 计算机语言的发展过程
-![](.README_images\计算机语言的发展过程.png)
+![](images/计算机语言的发展过程.png)
 <br>
 **Java是一种半编译半解释型的语言。**
 #### Java语言特点
 1.简单、高效；<br>
 2.面向对象；<br>
 3.跨平台性（一次编译、到处运行）；<br>
-![](.README_images\跨平台性.png)
+![](images/跨平台性.png)
 <br>
 4.交互式特性；<br>
 5.多线程；<br>
@@ -17,15 +17,15 @@
 
 #### 二、Java 标识符、字面量、数据类型
 - 标识符<br>
-![](.README_images\标识符.png)<br>
+![](images/标识符.png)<br>
 - 分隔符<br>
-![](.README_images\分隔符.png)<br>
+![](images/分隔符.png)<br>
 - 关键字<br>
-![](.README_images\关键字.png)<br>
+![](images/关键字.png)<br>
 - Java的命名规范<br>
-![](.README_images\命名规范.png)<br>
+![](images/命名规范.png)<br>
 - 注释<br>
-![](.README_images\注释.png)<br>
+![](images/注释.png)<br>
 - 变量、常量、字面量<br>
 1.什么是变量？ -》 内存里的一段存储单元，有类型、名称和作用域，我们可以通过操作变量名进而操作相应的内存单元。<br>
 2.变量的声明  -》 两种方式：类型 变量名称；类型 变量名称 = 值<br>
@@ -40,36 +40,36 @@
 ASCII码是 8位的，用于表示一些英文字母和特殊字符还是可以的，但是如果是汉字或是韩文、日文就不够用了，所以Java用的编码为UNICODE编码，
 UNICODE编码是双字节的，16位 -- 即 char 16位<br>
 float a=3.14F;// 默认是double类型，需要在3.14后面加上F或f标明它是Float类型<br>
-![](.README_images\数据类型.png)<br>
+![](images/数据类型.png)<br>
 数据类型取值范围计算：<br>
-![](.README_images\数据类型取值范围计算.png)<br>
-![](.README_images\数据类型取值范围.png)<br>
+![](images/数据类型取值范围计算.png)<br>
+![](images/数据类型取值范围.png)<br>
 补充：char类型取值范围 ：0 - 65535 <br>
 数据类型字面量<br>
-![](.README_images\数据类型字面量.png)<br>
+![](images/数据类型字面量.png)<br>
 ```
 int a2 = 0b11011010; // 二进制  0b 或 0B
 int a8 = 01213;      // 八进制
 int a16 = 0x11fa901; // 十六进制  0x或 0X
 ```
 类型转换 -- 涉及到内存中的【对位】问题，比如说：byte和int相加<br>
-![](.README_images\类型转换.png)<br>
+![](images/类型转换.png)<br>
 1.布尔类型不能和其他7中数据类型进行相互转换<br>
 2.向上转型的顺序：byte -> (short = char) -> int -> long -> float -> double
-向下转型：有可能溢出 int j=200;<br> ![](.README_images\数据类型向下转型.png)<br>
+向下转型：有可能溢出 int j=200;<br> ![](images/数据类型向下转型.png)<br>
 输出为 -50<br>
 如果是 int j=20; 此时byte（水杯大小为-128~127）就放得下，输出正常20！！！<br>
 例2：<br>
-![](.README_images\数据类型转换2.png)<br>
+![](images/数据类型转换2.png)<br>
 输出为3153 。 精度损失，小数位没有了<br>
 
 #### 三、Java运算符和表达式
-![](.README_images\Java运算符和表达式.png)<br>
+![](images/Java运算符和表达式.png)<br>
 - 赋值运算【重】<br>
-![](.README_images\赋值运算.png)<br>
-![](.README_images\赋值运算-数组[重点].png)<br>
+![](images/赋值运算.png)<br>
+![](images/赋值运算-数组[重点].png)<br>
 其中，int[] array2=array1; 赋给的是地址（指针）的传递<br>
-![](.README_images\赋值运算-对象[重点].png)<br>
+![](images/赋值运算-对象[重点].png)<br>
 - 算术运算<br>
 注意的点：<br>
 1./ 是求商的，int a=1/2; 结果为0 ； %是取余运算，int a=1%2; 结果为1。
@@ -103,11 +103,11 @@ c = d
 ```
 - 关系运算<br>
 也叫比较运算<br>
-![](.README_images\关系运算.png)<br>
+![](images/关系运算.png)<br>
 对象的比较：1.比较指针；2.比较内容 equals<br>
 - 三目运算符<br>
 - 逻辑运算<br>
-![](.README_images\逻辑运算.png) <br>
+![](images/逻辑运算.png) <br>
 ```
 五个运算符
 注意一个问题：& 和 | 都会判断 if 中的所有条件！！！
@@ -137,7 +137,7 @@ c = d
 if(a<b || b++>c) -> if(a<b | b++>c)
 ```
 - 位运算<br>
-![](.README_images\位运算.png) <br>
+![](images/位运算.png) <br>
 Demo -> com.ishiqing.modules.java.位运算 <br>
 & 与运算、|或运算、^异或运算、~取反运算、<<左移位、>>右移位
 >原码、反码、补码
@@ -156,11 +156,11 @@ Demo -> com.ishiqing.modules.java.位运算 <br>
 注意-128实际上是使用以前的-0的补码来表示的， 所以-128并没有原码和反码。
 使用补码， 不仅仅修复了0的符号以及存在两个编码的问题， 而且还能够多表示一个最低数。 这就是为什么8位二进制， 使用补码表示的范围为[-128， 127]。
 - 优先级和结合性<br>
-![](.README_images\优先级和结合性.png)<br>
-![](.README_images\优先级和结合性eg.png)<br>
+![](images/优先级和结合性.png)<br>
+![](images/优先级和结合性eg.png)<br>
 
 #### 四、流程控制
-![](.README_images\流程控制.png)<br>
+![](images/流程控制.png)<br>
 > 分三种：顺序执行、选择、循环<br>
 
 - 顺序执行 -> 比如：方法的调用 <br>
@@ -171,7 +171,7 @@ Demo -> com.ishiqing.modules.java.位运算 <br>
 - 循环
 
 #### 五、数组
-![](.README_images\数组.png)<br>
+![](images/数组.png)<br>
 数组是一个集合，用于保存多个值。线性数据结构，前后数据连续。通过索引（下标）对数组进行遍历。
 ```
 int[] a = new int[]{1, 2, 3};
@@ -187,7 +187,7 @@ a=100;
 输出a、b结果为 ： 100 、1 。b值没有变化, b=a 相当于copy了一份。
 ```
 2.内存分析<br>
-![](.README_images\内存分析.png)<br>
+![](images/内存分析.png)<br>
 [JAVA中的栈和堆](https://www.cnblogs.com/ibelieve618/p/6380328.html)
 - 数组排序--冒泡排序 <br>
 示例：com.ishiqing.modules.java.冒泡排序
@@ -203,10 +203,10 @@ a=100;
 > HTTP两种请求方式：get\post
 
 - HTTP请求的格式 <br>
-![](.README_images\HTTP请求格式.png) <br>
+![](images/HTTP请求格式.png) <br>
 请求行、请求头、请求体
 - HTTP响应的格式 <br>
-![](.README_images\HTTP响应格式.png) <br>
+![](images/HTTP响应格式.png) <br>
 响应行、响应头、响应体
 - [Volley](http://www.gulixueyuan.com/course/112/task/1697/show)
 

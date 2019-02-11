@@ -9,11 +9,7 @@ import java.util.Collection;
 
 public class ProxyTest {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) throws Exception {
-        // TODO Auto-generated method stub
         Class clazzProxy1 = Proxy.getProxyClass(Collection.class.getClassLoader(), Collection.class);
         System.out.println(clazzProxy1.getName());
 
@@ -111,5 +107,4 @@ public class ProxyTest {
         );
         return proxy3;
     }
-
 }
