@@ -15,6 +15,24 @@
 <p>5.【难】泛型参数的类型推断</p>
 <img src="src/generics/5.【难】泛型参数的类型推断.png"/>
 
+- [Reflect 反射](src/reflect_s)
+<p>反射实现框架的功能</p>
+<img src="src/reflect_s/image/反射实现框架的功能.png"/>
+<p>数组的反射</p>
+<img src="src/reflect_s/image/数组的反射.png"/>
+<p>用反射方式执行某个类中的main方法</p>
+<img src="src/reflect_s/image/用反射方式执行某个类中的main方法.png"/>
+<p>hashCode方法与HashSet类</p>
+<img src="src/reflect_s/image/hashCode方法与HashSet类.png"/>
+<p>【重】HashSet造成的内存泄漏</p>
+<img src="src/reflect_s/image/【重】HashSet造成的内存泄漏.png"/>
+
+- [Reflect 反射--内省](src/reflect_s/内省)
+<p>内省</p>
+<img src="src/reflect_s/内省/内省.png"/>
+<p>内省案例</p>
+<img src="src/reflect_s/内省/内省案例.png"/>
+
 - [ArrayList](src/arraylist)
 - [多线程](src/aop/thread)
 - [HashMap与HashTable区别](src/basic/HashMap与HashTable区别.md)
@@ -61,6 +79,9 @@
 <p>4_自定义类加载器</p>
 <img src="src/jvm/4_自定义类加载器.png"/>
 
-Java中级技术教程 http://yun.itheima.com/course/5.html
+#### 多线程
+- [Java中终止（销毁）线程的方法](src/thread_s/Java中终止（销毁）线程的方法.md)
 
-Java多线程与并发库高级应用 http://yun.itheima.com/course/37.html
+#### 学习资源
+- Java中级技术教程 http://yun.itheima.com/course/5.html
+- Java多线程与并发库高级应用 http://yun.itheima.com/course/37.html
