@@ -3,11 +3,11 @@
 - [Enum 枚举](src/enum_s)
 - [Generics 泛型](src/generics)
 <p>了解泛型</p>
-<img src="src/generics/了解泛型.png"/>
+<img src="src/generics/了解泛型.png"  width="1000" height="450"/>
 <p>1.【重】理解泛型</p>
-<img src="src/generics/1.【重】理解泛型.png"/>
+<img src="src/generics/1.【重】理解泛型.png"  width="1000" height="450"/>
 <p>2.限定通配符</p>
-<img src="src/generics/2.限定通配符.png"/>
+<img src="src/generics/2.限定通配符.png"  width="1000" height="450"/>
 <p>3.由C++模板函数引入自定义泛型</p>
 <img src="src/generics/3.由C++模板函数引入自定义泛型.png"/>
 <p>4.泛型练习题</p>
@@ -71,7 +71,7 @@
 - [JVM运行时数据区](src/jvm/basic/JVM运行时数据区.md)
 - [类加载器及双亲委派](src/jvm/类加载器及双亲委派.md)
 <p>1_类加载器</p>
-<img src="src/jvm/1_类加载器.png"/>
+<img src="src/jvm/1_类加载器.png" width="1000" height="450"/>
 <p>2_类加载器之间的关系</p>
 <img src="src/jvm/2_类加载器之间的关系.png"/>
 <p>3_类加载器的委托机制</p>
