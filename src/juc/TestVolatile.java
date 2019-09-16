@@ -1,5 +1,7 @@
 package juc;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 /*
  * 一、volatile(互斥锁) 关键字：当多个线程进行操作共享数据时，可以保证内存中的数据可见。
  * 					   相较于 synchronized 是一种较为轻量级的同步策略。
@@ -23,7 +25,6 @@ public class TestVolatile {
             //如果 flag 没有 volatile 修饰,可以采用 synchronized 方式,每次都会重新从主存中读数据并刷新缓存,效率会降低
 //			synchronized (td){
 //			}
-
         }
     }
 

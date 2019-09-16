@@ -21,7 +21,6 @@ public class TestCompareAndSwap {
 		}
 		
 	}
-	
 }
 
 class CompareAndSwap{
