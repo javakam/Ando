@@ -8,12 +8,12 @@ import java.util.concurrent.CountDownLatch;
 public class TestCountDownLatch {
 
 	public static void main(String[] args) {
-		final CountDownLatch latch = new CountDownLatch(50);
+		final CountDownLatch latch = new CountDownLatch(10);
 		LatchDemo ld = new LatchDemo(latch);
 
 		long start = System.currentTimeMillis();
 
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 10; i++) {
 			new Thread(ld).start();
 		}
 

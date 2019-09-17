@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 
  * 		  int temp = i;
  * 		  i = i + 1;
- * 		  i = temp;
+ * 		  temp = i;
  * 
  * 二、原子变量：在 java.util.concurrent.atomic 包下提供了一些原子变量。
  * 		1. volatile 保证内存可见性
