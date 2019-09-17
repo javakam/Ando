@@ -52,7 +52,7 @@ public class IntroSpectorTest {
         return retVal;*/
 
         /*
-        zxx   内省案例.png  遍历BeanInfo的方式去做 -- 繁琐的方式
+        zxx   内省综合案例  遍历BeanInfo的方式去做 -- 繁琐的方式
          */
         BeanInfo beanInfo = Introspector.getBeanInfo(point.getClass());
         PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
