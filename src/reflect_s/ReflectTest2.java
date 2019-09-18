@@ -10,7 +10,7 @@ import java.util.HashSet;
  * ArrayList_HashSet的比较及Hashcode分析
  * <p>
  * hashCode方法与HashSet类.png
- * 【重】HashSet造成的内存泄漏.png
+ * 【重】HashSet造成的内存泄漏
  */
 public class ReflectTest2 {
 
@@ -43,7 +43,7 @@ public class ReflectTest2 {
         添加完成后，修改hashCode方法中用于参与计算的变量值，会改变当前对象哈希值使得与HashSet中的哈希值不匹配，
         从而造成内存泄漏！！！
          */
-        // 参照：【重】HashSet造成的内存泄漏.png
+        // 参照：【重】HashSet造成的内存泄漏
 //        rp1.x = 9;
         collection2.remove(rp1);
         System.out.println(collection2.size());
