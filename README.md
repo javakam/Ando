@@ -1,4 +1,4 @@
-[toc]
+[[_TOC_]]
 
 ### 地图
 - [Java 基础总结](src/basic/README.md)
