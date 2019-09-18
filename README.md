@@ -1,4 +1,5 @@
 <div class="toc">
+<h1>目录</h1>
 <ul>
 <li><a href="#知识点">知识点</a></li>
 <li><a href="#泛型">泛型</a>
@@ -51,110 +52,10 @@
 </li>
 <li><a href="#多线程">多线程</a></li>
 <li><a href="#学习资源">学习资源</a></li>
-<li><a href="#地图">地图</a></li>
-<li><a href="#泛型-1">泛型</a>
-<ul>
-<li><a href="#了解泛型-1">了解泛型</a></li>
-<li><a href="#1理解泛型重-1">1.理解泛型【重】</a></li>
-<li><a href="#2限定通配符-1">2.限定通配符</a></li>
-<li><a href="#3由c模板函数引入自定义泛型-1">3.由C++模板函数引入自定义泛型</a></li>
-<li><a href="#4泛型练习题-1">4.泛型练习题</a></li>
-<li><a href="#5泛型参数的类型推断难-1">5.泛型参数的类型推断【难】</a></li>
-</ul>
-</li>
-<li><a href="#反射-1">反射</a>
-<ul>
-<li><a href="#1反射实现框架的功能-1">1.反射实现框架的功能</a></li>
-<li><a href="#2数组的反射-1">2.数组的反射</a></li>
-<li><a href="#3用反射方式执行某个类中的main方法-1">3.用反射方式执行某个类中的main方法</a></li>
-<li><a href="#4hashcode方法与hashset类-1">4.hashCode方法与HashSet类</a></li>
-<li><a href="#5hashset造成的内存泄漏重-1">5.HashSet造成的内存泄漏【重】</a></li>
-</ul>
-</li>
-<li><a href="#反射内省-1">反射👉内省</a>
-<ul>
-<li><a href="#1内省-1">1.内省</a></li>
-<li><a href="#2内省综合案例-1">2.内省综合案例</a></li>
-</ul>
-</li>
-<li><a href="#代理-1">代理</a>
-<ul>
-<li><a href="#1理解代理-1">1.理解代理</a></li>
-<li><a href="#2代理架构图-1">2.代理架构图</a></li>
-<li><a href="#3aop原理-代理proxy-1">3.aop原理-代理proxy</a></li>
-<li><a href="#4动态代理介绍-1">4.动态代理介绍</a>
-<ul>
-<li><a href="#cglib和jdk实现动态代理的区别-1">cglib和jdk实现动态代理的区别</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#位运算符详解实例-1">位运算符详解实例</a></li>
-<li><a href="#设计模式-1">设计模式</a></li>
-<li><a href="#jvm-1">JVM</a></li>
-<li><a href="#类加载器-1">类加载器</a>
-<ul>
-<li><a href="#1类加载器-1">1.类加载器</a></li>
-<li><a href="#2类加载器之间的关系-1">2.类加载器之间的关系</a></li>
-<li><a href="#3类加载器的委托机制-1">3.类加载器的委托机制</a></li>
-<li><a href="#4自定义类加载器-1">4.自定义类加载器</a></li>
-</ul>
-</li>
-<li><a href="#多线程-1">多线程</a></li>
-<li><a href="#学习资源-1">学习资源</a></li>
-<li><a href="#地图-1">地图</a></li>
-<li><a href="#泛型-2">泛型</a>
-<ul>
-<li><a href="#了解泛型-2">了解泛型</a></li>
-<li><a href="#1理解泛型重-2">1.理解泛型【重】</a></li>
-<li><a href="#2限定通配符-2">2.限定通配符</a></li>
-<li><a href="#3由c模板函数引入自定义泛型-2">3.由C++模板函数引入自定义泛型</a></li>
-<li><a href="#4泛型练习题-2">4.泛型练习题</a></li>
-<li><a href="#5泛型参数的类型推断难-2">5.泛型参数的类型推断【难】</a></li>
-</ul>
-</li>
-<li><a href="#反射-2">反射</a>
-<ul>
-<li><a href="#1反射实现框架的功能-2">1.反射实现框架的功能</a></li>
-<li><a href="#2数组的反射-2">2.数组的反射</a></li>
-<li><a href="#3用反射方式执行某个类中的main方法-2">3.用反射方式执行某个类中的main方法</a></li>
-<li><a href="#4hashcode方法与hashset类-2">4.hashCode方法与HashSet类</a></li>
-<li><a href="#5hashset造成的内存泄漏重-2">5.HashSet造成的内存泄漏【重】</a></li>
-</ul>
-</li>
-<li><a href="#反射内省-2">反射👉内省</a>
-<ul>
-<li><a href="#1内省-2">1.内省</a></li>
-<li><a href="#2内省综合案例-2">2.内省综合案例</a></li>
-</ul>
-</li>
-<li><a href="#代理-2">代理</a>
-<ul>
-<li><a href="#1理解代理-2">1.理解代理</a></li>
-<li><a href="#2代理架构图-2">2.代理架构图</a></li>
-<li><a href="#3aop原理-代理proxy-2">3.aop原理-代理proxy</a></li>
-<li><a href="#4动态代理介绍-2">4.动态代理介绍</a>
-<ul>
-<li><a href="#cglib和jdk实现动态代理的区别-2">cglib和jdk实现动态代理的区别</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#位运算符详解实例-2">位运算符详解实例</a></li>
-<li><a href="#设计模式-2">设计模式</a></li>
-<li><a href="#jvm-2">JVM</a></li>
-<li><a href="#类加载器-2">类加载器</a>
-<ul>
-<li><a href="#1类加载器-2">1.类加载器</a></li>
-<li><a href="#2类加载器之间的关系-2">2.类加载器之间的关系</a></li>
-<li><a href="#3类加载器的委托机制-2">3.类加载器的委托机制</a></li>
-<li><a href="#4自定义类加载器-2">4.自定义类加载器</a></li>
-</ul>
-</li>
-<li><a href="#多线程-2">多线程</a></li>
-<li><a href="#学习资源-2">学习资源</a></li>
 </ul>
 </div>
+
+---
 
 ### 知识点
 - [Java 基础总结](src/basic/README.md)
