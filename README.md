@@ -58,7 +58,8 @@
 ---
 
 ### 知识点
-- [Java 基础总结](src/basic/README.md)
+- [基础知识](src/basic/README.md)
+- [JUC](src/juc/README.md)
 - [Enum 枚举](src/enum_s)
 - [Generics 泛型](src/generics)
 - [ArrayList](src/arraylist)
