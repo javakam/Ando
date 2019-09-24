@@ -1,8 +1,8 @@
 # Java JUC
 
 - 学习曲线 https://www.bilibili.com/read/cv3560825/
-- 尚硅谷 -Java 并发视频教程全集（15P）| 3 小时从入门到精通
-  视频 :  <https://www.bilibili.com/video/av59548640/>
+- 尚硅谷 -Java 并发视频教程全集（15P）| 3 小时从入门到精通 <br>
+  视频 :  <https://www.bilibili.com/video/av59548640/> <br>
   源码 :  链接: https://pan.baidu.com/s/1_3Vg0lBeieQ5Ak4Ru3dyfw 提取码: 5w2a
 
 ### volatile(互斥锁) 
