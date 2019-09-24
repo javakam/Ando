@@ -17,9 +17,7 @@ public class TestCallable {
         //1.执行 Callable 方式，需要 FutureTask 实现类的支持，用于接收运算结果。
         // FutureTask 本质上也是 Runnable
         FutureTask<Integer> result = new FutureTask<>(td);
-
         new Thread(result).start();
-
         //2.接收线程运算后的结果
         try {
             // 此时 get() 不会立刻返回值,而是等到线程执行完并返回值后,才会执行下面的代码,可见 FutureTask 也可用于 [闭锁] !!!!!!

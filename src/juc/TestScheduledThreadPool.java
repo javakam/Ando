@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
  * 
  * ScheduledExecutorService newScheduledThreadPool() : 创建固定大小的线程，可以延迟或定时的执行任务。
  */
+//pool.schedule
 public class TestScheduledThreadPool {
 
 	public static void main(String[] args) throws Exception {
@@ -40,7 +41,6 @@ public class TestScheduledThreadPool {
 				}
 				
 			}, 1, TimeUnit.SECONDS);
-			
 			System.out.println(result.get());
 		}
 		

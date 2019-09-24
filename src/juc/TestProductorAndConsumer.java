@@ -34,9 +34,7 @@ class Clerk{
 				this.wait();
 			} catch (InterruptedException e) {
 			}
-			
 		}
-		
 		System.out.println(Thread.currentThread().getName() + " : " + ++product);
 		this.notifyAll();
 	}

@@ -23,8 +23,8 @@ public class TestVolatile {
                 break;
             }
             //如果 flag 没有 volatile 修饰,可以采用 synchronized 方式,每次都会重新从主存中读数据并刷新缓存,效率会降低
-//			synchronized (td){
-//			}
+			//synchronized (td){
+			//}
         }
     }
 

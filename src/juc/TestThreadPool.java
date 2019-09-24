@@ -24,6 +24,7 @@ import java.util.concurrent.Future;
  * 
  * ScheduledExecutorService newScheduledThreadPool() : 创建固定大小的线程，可以延迟或定时的执行任务。
  */
+//pool.submit
 public class TestThreadPool {
 	
 	public static void main(String[] args) throws Exception {

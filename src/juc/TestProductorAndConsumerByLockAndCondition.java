@@ -33,25 +33,19 @@ class Clerk2 {
     // 进货
     public void get() {
         lock.lock();
-
         try {
             while (product >= 1) { // 为了避免虚假唤醒，应该总是使用在循环中。
                 System.out.println(Thread.currentThread().getName() + " 产品已满！");
-
                 try {
                     condition.await();
                 } catch (InterruptedException e) {
                 }
-
             }
-            System.out.println(Thread.currentThread().getName() + " : "
-                    + ++product);
-
+            System.out.println(Thread.currentThread().getName() + " : " + ++product);
             condition.signalAll();
         } finally {
             lock.unlock();
         }
-
     }
 
     // 卖货
