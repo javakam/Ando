@@ -31,13 +31,13 @@ public class StreamGobbler extends Thread {
             if (os != null) {
                 pw = new PrintWriter(os);
             }
-
             isr = new InputStreamReader(is);
             br = new BufferedReader(isr);
             String line = null;
             while ((line = br.readLine()) != null) {
-                if (pw != null)
+                if (pw != null) {
                     pw.println(line);
+                }
                 System.out.println(type + ">" + line);
             }
             if (pw != null) {

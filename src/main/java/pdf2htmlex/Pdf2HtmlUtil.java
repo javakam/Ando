@@ -3,12 +3,13 @@ package pdf2htmlex;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * pdf转html工具类
+ * Title:Pdf2HtmlUtil
  * <p>
- * 参考链接 : https://www.jianshu.com/p/e752dfeb628f
+ * Description:pdf转html工具类 参考链接 : https://www.jianshu.com/p/e752dfeb628f
+ * </p>
  *
- * @author 1nchaos
- * @date 2019/3/7 13:20
+ * @author Changbao
+ * @date 2019/9/26 9:21
  */
 public class Pdf2HtmlUtil {
 
@@ -41,8 +42,6 @@ public class Pdf2HtmlUtil {
         command.append("--process-outline 0 ");
         // 嵌入html中的字体后缀(default ttf)
         command.append("--font-format woff ");
-        // 生成css目录
-        command.append(String.format("--css-filename %s\\data\\fancy.css ", destDir));
         // ttf,otf,woff,svg  需要替换文件路径中的空格
         command.append(pdfFile.replace(" ", "\" \"")).append(" ");
         if (!"".equals(htmlFileName.trim())) {
@@ -50,36 +49,6 @@ public class Pdf2HtmlUtil {
             if (!htmlFileName.endsWith(".html")) {
                 command.append(".html");
             }
-        }
-        if (streamPrintInfo(rt, command)) return true;
-        return false;
-    }
-
-    /**
-     * @param pdfFile
-     * @param destDir 生成的html文件存放路径
-     * @return
-     */
-    public static boolean pdf2htmlLinux(String pdfFile, String destDir) {
-        if (StringUtils.isBlank(pdfFile) && StringUtils.isBlank(destDir)) {
-            System.out.println("传递的参数有误！");
-            return false;
-        }
-        Runtime rt = Runtime.getRuntime();
-        StringBuilder command = new StringBuilder();
-        command.append("pdf2htmlEX").append(" ");
-        // 尽量减少用于文本的HTML元素的数目 (default: 0)
-        command.append("--optimize-text 1 ");
-        command.append("--zoom 1.4 ");
-        // html中显示链接：0——false，1——true
-        command.append("--process-outline 0 ");
-        // 嵌入html中的字体后缀(default ttf)
-        command.append("--font-format woff ");
-        // ttf,otf,woff,svg  需要替换文件路径中的空格
-        command.append(pdfFile.replace(" ", "\" \"")).append(" ");
-        // 生成文件存放位置,需要替换文件路径中的空格
-        if (destDir != null && !"".equals(destDir.trim())) {
-            command.append("--dest-dir ").append(destDir.replace(" ", "\" \"")).append(" ");
         }
         return streamPrintInfo(rt, command);
     }
@@ -90,11 +59,11 @@ public class Pdf2HtmlUtil {
             return false;
         }
         Runtime rt = Runtime.getRuntime();
-        StringBuilder command = new StringBuilder();
-        command.append("pdf2htmlEX").append(" ");
+        StringBuilder command = new StringBuilder(" ");
         // 生成文件存放位置,需要替换文件路径中的空格
-        if (destDir != null && !"".equals(destDir.trim()))
+        if (!StringUtils.isBlank(destDir) && !"".equals(destDir.trim())) {
             command.append("--dest-dir ").append(destDir.replace(" ", "\" \"")).append(" ");
+        }
         // 尽量减少用于文本的HTML元素的数目 (default: 0)
         command.append("--optimize-text 1 ");
         command.append("--zoom 1.4 ");
