@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * 数组实现 -> {@link ArrayList}

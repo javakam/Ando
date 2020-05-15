@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * ArrayList - 底层使用数组

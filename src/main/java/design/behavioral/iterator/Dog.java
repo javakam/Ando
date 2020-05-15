@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * Created by changbao on 2018/7/19 星期四 .

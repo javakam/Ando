@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * LinkedList - 底层使用链表

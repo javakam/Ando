@@ -1,4 +1,4 @@
-package design.strategy;
+package design.behavioral.strategy;
 
 /**
  * Created by changbao on 2018/7/23 0023 星期一 .

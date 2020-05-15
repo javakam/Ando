@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * 面向接口编程 - 声明父类new子类

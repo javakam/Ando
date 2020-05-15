@@ -1,4 +1,4 @@
-package design.iterator;
+package design.behavioral.iterator;
 
 /**
  * 链表节点 - 包含数据本身和下一节点信息
