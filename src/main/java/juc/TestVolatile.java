@@ -14,6 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class TestVolatile {
 
     public static void main(String[] args) {
+
         ThreadDemo td = new ThreadDemo();
         new Thread(td).start();
 
@@ -23,11 +24,38 @@ public class TestVolatile {
                 break;
             }
             //如果 flag 没有 volatile 修饰,可以采用 synchronized 方式,每次都会重新从主存中读数据并刷新缓存,效率会降低
-			//synchronized (td){
-			//}
+            //synchronized (td){
+            //}
         }
     }
 
+}
+
+//https://blog.csdn.net/javazejian/article/details/72772461
+//https://www.cnblogs.com/sunleejon/p/12499518.html
+class Yzx {
+    public volatile int inc = 0;
+
+    public void increase() {
+        inc++;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("原子性------------------");
+
+        final Yzx test = new Yzx();
+        for (int i = 0; i < 10; i++) {
+            new Thread() {
+                public void run() {
+                    for (int j = 0; j < 1000; j++)
+                        test.increase();
+                }
+            }.start();
+        }
+        while (Thread.activeCount() > 1)  //保证前面的线程都执行完
+            Thread.yield();
+        System.out.println(test.inc);
+    }
 }
 
 class ThreadDemo implements Runnable {
