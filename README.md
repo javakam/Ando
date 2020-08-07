@@ -1,3 +1,7 @@
+# Ando
+
+项目分为两部分,`AndoJava`为Java 基础知识,`AndoKotlin`为Kotlin 使用笔记。
+
 <div class="toc">
 <h1>目录</h1>
 <ul>
