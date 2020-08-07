@@ -1,6 +1,6 @@
 package practice.clazz
 
-import practice.kotlin.basic.line
+import practice.basic.line
 
 //扩展函数 https://www.kotlincn.net/docs/reference/extensions.html
 

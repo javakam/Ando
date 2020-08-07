@@ -1,5 +1,6 @@
 package practice.basic
 
+import java.nio.file.FileSystem
 import java.nio.file.Files
 import java.nio.file.Paths
 
@@ -70,7 +71,7 @@ fun main() {
     line()
 
     //声明方法时给默认值，给了默认值后再有调用foo则不用传参了
-    practice.kotlin.clazz.foo()
+    practice.clazz.foo()
 
     //lazy
     val p: String by lazy {
@@ -82,7 +83,7 @@ fun main() {
     //Extension Functions
     println("My name is kotlin".replaceSpaceWithCustomLine("|"))
 
-    //Creating a singleton  ->  @see practice.kotlin.Singleton
+    //Creating a singleton  ->  @see practice.Singleton
     line()
 
     /*
@@ -127,7 +128,7 @@ fun main() {
     ifOpt(2)
     line()
 
-    val filePath = "/Users/TANGRONG/fastwork/IdeaProjects/src/practice/kotlin/静夜思.txt"
+    val filePath = "src/main/kotlin/practice/Quiet night thinking.txt"
     //读取本地文件中的数据
     val stream = Files.newInputStream(Paths.get(filePath))
     stream.buffered().reader().use { reader ->

@@ -1,6 +1,6 @@
 package practice.clazz
 
-import practice.kotlin.basic.line
+import practice.basic.line
 
 /**
  * 类与继承 https://www.kotlincn.net/docs/reference/classes.html
