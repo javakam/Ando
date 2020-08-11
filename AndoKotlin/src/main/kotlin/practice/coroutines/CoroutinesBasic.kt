@@ -130,19 +130,23 @@ suspend fun doWorld() {
 }
 
 //协程很轻量
-fun main() = runBlocking {
+fun main7() = runBlocking {
     val beginTime = System.currentTimeMillis()
-//    val endTime = testKotlin() //耗时: 1689
-//    println("耗时: ${endTime - beginTime}")
 
-//    val endTime = testJavaCachePool()//耗时: 23585
-
-
-    //耗时:
-    //todo 2020-08-10 17:12:43 有问题
-    testJavaSchedulePool { endTime ->
+    //耗时: 1766
+   testKotlin{endTime ->
         println("耗时: ${endTime - beginTime}")
     }
+
+    //耗时:2783
+//    testJavaCachePool { endTime ->
+//        println("耗时: ${endTime - beginTime}")
+//    }
+
+    //耗时:2230
+//    testJavaSchedulePool { endTime ->
+//        println("耗时: ${endTime - beginTime}")
+//    }
 
     //耗时:2295
 //    testJavaFastestPool { endTime ->
@@ -160,10 +164,10 @@ suspend fun testKotlin(block: (time: Long) -> Unit) {
                 delay(1000L)
                 print("$it .")
                 count++
-            }
 
-            if (count == 100_000L) {
-                block(System.currentTimeMillis())
+                if (count == 100_000L) {
+                    block(System.currentTimeMillis())
+                }
             }
         }
     }
@@ -197,14 +201,15 @@ suspend fun testJavaSchedulePool(block: (time: Long) -> Unit) {
     withContext(Dispatchers.Default) {
         val pool = Executors.newSingleThreadScheduledExecutor()
         var count: Long = 0L
+        Thread.sleep(1000)
 
         repeat(100_000) { // 启动大量的协程
             val callable = Callable<Boolean> {
                 print("$it .")
-                count++
                 true
             }
-            pool.schedule(callable, 1, TimeUnit.SECONDS)
+            val future: Future<Boolean> = pool.schedule(callable, 0, TimeUnit.SECONDS)
+            if (future.get()) count++
             if (count == 100_000L) {
                 block(System.currentTimeMillis())
             }
@@ -219,9 +224,9 @@ suspend fun testJavaFastestPool(block: (time: Long) -> Unit) {
 
         var count: Long = 0L
         repeat(100_000) { // 启动大量的协程
-            pool.execute(Runnable {
-                print("$it .")
-            })
+//            pool.execute(Runnable {
+//                print("$it .")
+//            })
 
             val future: Future<Boolean> = pool.submit(Callable<Boolean> {
                 print("$it .")
