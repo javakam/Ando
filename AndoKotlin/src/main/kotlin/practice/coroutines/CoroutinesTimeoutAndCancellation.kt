@@ -3,11 +3,11 @@ package practice.coroutines
 import kotlinx.coroutines.*
 import java.lang.Exception
 
-/**
- * 取消与超时
- * <p>
- * https://www.kotlincn.net/docs/reference/coroutines/cancellation-and-timeouts.html#%E5%8F%96%E6%B6%88%E4%B8%8E%E8%B6%85%E6%97%B6
- */
+
+//取消与超时
+//https://www.kotlincn.net/docs/reference/coroutines/cancellation-and-timeouts.html
+
+//取消协程的执行
 fun main10() = runBlocking {
 
     val job: Job = launch {
@@ -77,8 +77,9 @@ fun main13() = runBlocking {
                 println("job: I'm sleeping $i ...")
                 delay(500L)
             }
-//        } catch (e: Exception) {
-//            println("Exception -> ${e.message}")
+        } catch (e: Exception) {
+            //开发时注释掉 catch
+            println("Exception -> ${e.message}")
         } finally {
             println("job: I'm running finally")
         }

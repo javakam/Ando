@@ -1,31 +1,21 @@
 package practice.coroutines
 
-import javafx.application.Application.launch
 import kotlinx.coroutines.*
-import org.jetbrains.annotations.TestOnly
-import sun.rmi.runtime.Log
 import java.util.concurrent.Callable
 import java.util.concurrent.Executors
 import java.util.concurrent.Future
 import java.util.concurrent.TimeUnit
-import kotlin.concurrent.thread
 
-/**
- * Title:协程
- * <p>
- * Description:https://www.bilibili.com/video/av67107689/
- * </p>
- * @author javakam
- * @date 2020-08-07 16:50:37
- */
-@Deprecated("建议配合 runBlocking 使用, 如下")
+//协程基础
+//https://www.kotlincn.net/docs/reference/coroutines/basics.html
+
+//第一个协程程序
 fun main1() {
     GlobalScope.launch { // 在后台启动一个新的协程并继续
         delay(1000L) // 非阻塞的等待 1 秒钟（默认时间单位是毫秒）
         println("World!") // 在延迟后打印输出
     }
     println("Hello,") // 协程已在等待时主线程还在继续
-
 
     //Thread.sleep(2000L) // 阻塞主线程 2 秒钟来保证 JVM 存活
     //另外一种写法:
@@ -34,8 +24,7 @@ fun main1() {
     }
 }
 
-//上面更好的写法
-//使用 runBlocking 来包装 main 函数的执行
+//建议使用 runBlocking 来包装 main 函数的执行
 fun main2() = runBlocking<Unit> { // 开始执行主协程
     GlobalScope.launch { // 在后台启动一个新的协程并继续
         delay(1000L)
@@ -134,7 +123,7 @@ fun main7() = runBlocking {
     val beginTime = System.currentTimeMillis()
 
     //耗时: 1766
-   testKotlin{endTime ->
+    testKotlin { endTime ->
         println("耗时: ${endTime - beginTime}")
     }
 

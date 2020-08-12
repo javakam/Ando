@@ -3,6 +3,8 @@ package practice.coroutines
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
+//组合挂起函数
+//https://www.kotlincn.net/docs/reference/coroutines/composing-suspending-functions.html
 
 suspend fun doSomethingUsefulOne(): Int {
     delay(2000L) // 假设我们在这里做了一些有用的事
