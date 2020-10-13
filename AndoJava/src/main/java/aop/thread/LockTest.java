@@ -11,7 +11,6 @@ public class LockTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		final Business business = new Business();
 		ExecutorService service = Executors.newFixedThreadPool(3);
 		for(int i=0;i<3;i++){

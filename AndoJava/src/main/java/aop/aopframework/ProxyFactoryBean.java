@@ -29,7 +29,6 @@ public class ProxyFactoryBean {
     }
 
     public Object getProxy() {
-        // TODO Auto-generated method stub
         Object proxy3 = Proxy.newProxyInstance(
                 target.getClass().getClassLoader(),
                 /*new Class[]{Collection.class},*/

@@ -8,7 +8,6 @@ public class MyClassLoader extends ClassLoader{
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
 		String srcPath = args[0];
 		String destDir = args[1];
 		FileInputStream fis = new FileInputStream(srcPath);
@@ -31,7 +30,6 @@ public class MyClassLoader extends ClassLoader{
 
 	@Override
 	protected Class<?> findClass(String name) throws ClassNotFoundException {
-		// TODO Auto-generated method stub
 		String classFileName = classDir + "\\"  + name.substring(name.lastIndexOf('.')+1) + ".class";
 		try {
 			FileInputStream fis = new FileInputStream(classFileName);

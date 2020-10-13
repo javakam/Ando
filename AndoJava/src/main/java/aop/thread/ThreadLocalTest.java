@@ -7,7 +7,6 @@ import java.util.concurrent.Executors;
 public class ThreadLocalTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ExecutorService service = Executors.newFixedThreadPool(2);
 		Runnable runnable = new Runnable(){
 			A a = new A();

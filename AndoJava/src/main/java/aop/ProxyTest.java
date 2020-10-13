@@ -53,13 +53,9 @@ public class ProxyTest {
         //Object obj = clazzProxy1.newInstance();
         Constructor constructor = clazzProxy1.getConstructor(InvocationHandler.class);
         class MyInvocationHander1 implements InvocationHandler {
-
-            public Object invoke(Object proxy, Method method, Object[] args)
-                    throws Throwable {
-                // TODO Auto-generated method stub
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 return null;
             }
-
         }
         Collection proxy1 = (Collection) constructor.newInstance(new MyInvocationHander1());
 
@@ -69,8 +65,7 @@ public class ProxyTest {
         //System.out.println("111111111111111");
 
         Collection proxy2 = (Collection) constructor.newInstance(new InvocationHandler() {
-            public Object invoke(Object proxy, Method method, Object[] args)
-                    throws Throwable {
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 return null;
             }
         });
@@ -87,7 +82,7 @@ public class ProxyTest {
     private static Object getProxy(final Object target, final Advice advice) {
         Object proxy3 = Proxy.newProxyInstance(
                 target.getClass().getClassLoader(),
-				/*new Class[]{Collection.class},*/
+                /*new Class[]{Collection.class},*/
                 target.getClass().getInterfaces(),
                 new InvocationHandler() {
                     public Object invoke(Object proxy, Method method, Object[] args)

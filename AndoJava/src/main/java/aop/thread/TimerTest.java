@@ -10,7 +10,6 @@ public class TimerTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ScheduledExecutorService service =  Executors.newScheduledThreadPool(3);
 		service.scheduleAtFixedRate(
 				new Runnable(){
