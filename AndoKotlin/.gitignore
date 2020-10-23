@@ -1,8 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gradle/
 .idea/
-AndoJava.iml
 out/
 target/
 build
 *.iml
+local.properties
